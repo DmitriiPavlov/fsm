@@ -67,7 +67,7 @@ static void yellow_light_event_handler(fsm_state_t* state, fsm_event_t* event){
 int main(){
     fsm_master_t* fsm = fsm_init();
     fsm_register_handler(GREEN, green_light_event_handler);
-    fsm_register_handler(YELLOW,yellow_light_event_handler);
+    fsm_register_handler(YELLOW, yellow_light_event_handler);
     fsm_register_handler(RED, red_light_event_handler);
 
     fsm_state_t* traffic_light = fsm_create_state(fsm, RED, NULL);
