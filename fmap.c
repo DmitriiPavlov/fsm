@@ -16,8 +16,8 @@ typedef struct {
     fmap_array_t* function_map_entries;
 } fmap_t;
 
-static inline fmap_event_handler_pair* fmap_entry_locate_pair(fmap_entry_t* entry, uint32_t enum_event_id);
 static inline int fmap_entry_create_pair(fmap_entry_t* entry, uint32_t enum_event_id, fsm_state_handler handler);
+static inline fmap_event_handler_pair* fmap_entry_locate_pair(fmap_entry_t* entry, uint32_t enum_event_id);
 static inline fmap_entry_t* fmap_create_entry(fmap_t* mapper, uint32_t enum_state_id);
 static inline fmap_entry_t* fmap_locate_entry(fmap_t* mapper, uint32_t enum_state_id);
 
